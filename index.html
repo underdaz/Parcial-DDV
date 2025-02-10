@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador Gráfico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #000000;
+            color: white; /* Cambié el color del texto general a blanco */
+        }
+
+        /* Encabezado con imagen de portada */
+        header {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: url('Imagenes/portada.png') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 50px;
+        }
+
+        /* Contenedor de la foto de perfil y el nombre */
+        .profile-container {
+            position: absolute;
+            bottom: -50px;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Foto de perfil en círculo */
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        /* Nombre debajo de la foto */
+        h1 {
+            font-size: 28px;
+            color: #DC143C;
+            margin-top: 10px;
+        }
+
+        /* Secciones de contenido */
+        .info-personal, .estudios, .menu {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(15, 15, 15);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #DC143C;
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            margin: 10px 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #A8112A;
+        }
+
+        /* Pie de página (Redes Sociales) */
+        footer {
+            background-color: #000; /* Fondo negro */
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .redes {
+            list-style: none;
+            padding: 0;
+        }
+
+        .redes li {
+            margin: 10px 0;
+        }
+
+        .redes a {
+            text-decoration: none;
+            color: #ffffff; /* Rojo escarlata */
+            font-weight: bold;
+        }
+
+        .redes a:hover {
+            color: #A8112A; /* Rojo más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-container">
+            <div class="profile">
+                <img src="Imagenes/fotodeperfil.png" alt="Mi foto de perfil">
+            </div>
+            <br><br><br><br>
+            <h1>Diseñador Gráfico</h1>
+        </div>
+    </header>
+
+    <section class="info-personal">
+        <p>
+            Hola, mi nombre es <strong>David Zepeda</strong>. Soy un apasionado del <em>diseño gráfico</em> y la <u>programación web</u>. Desde pequeño me ha fascinado el arte, lo que me llevó a estudiar diseño gráfico. Me encanta aprender cosas nuevas y explorar diferentes herramientas creativas.
+        </p>
+    </section>
+
+    <section class="estudios">
+        <h2>Estudios Realizados</h2>
+        <ol>
+            <li><strong>Universidad Autonoma de Santa Ana</strong> - Licenciatura en Diseño Gráfico Multimedia (2022-Presente)</li>
+            <li><strong>Universidad de El Salvador</strong> - Inglés (2017 - 2020)</li>
+            <li><strong>Instituto Nacional Jorge Eliseo Azucena Ortega</strong> - Bachillerato (2014 - 2015)</li>
+        </ol>
+    </section>
+
+    <nav class="menu">
+        <h2>Acerca de mí</h2>
+        <ul>
+            <li><a href="habilidades.html">Habilidades de Diseño Gráfico</a></li>
+            <li><a href="intereses.html">Intereses Personales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <h2>Redes Sociales</h2>
+        <ul class="redes">
+            <li><a href="https://www.facebook.com/profile.php?id=100076859329712" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/ill.daz/" target="_blank">Instagram</a></li>
+            <li><a href="https://wa.me/50312345678" target="_blank">WhatsApp</a></li>
+            <li><a href="mailto:artworkbydaz@gmail.com">Email</a></li>
+            <li><a href="tel:+50375208729">Teléfono</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
